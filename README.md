@@ -1,16 +1,65 @@
-<<<<<<< HEAD
-# React + Vite
+# Save the README content into a text file so the user can download it and copy-paste directly.
+readme_content = """# 📚 Book Finder App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Book Finder web app built with **React + Vite** and **Tailwind CSS**, using the [Open Library API](https://openlibrary.org/developers/api) to search and display books.  
 
-Currently, two official plugins are available:
+This project is created as part of a **Take-Home Challenge**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# bookfinder
->>>>>>> 5b80ef195fea76277586a7310a5b4a18fec63740
+- 🔎 **Search books** by title using Open Library API  
+- 💡 **Live suggestions** while typing (autocomplete dropdown)  
+- 📖 Display **book details** (title, author, cover) in clean cards  
+- ⏳ **Loading states** and error handling  
+- ❌ Shows message when **no results are found**  
+- 📱 Fully responsive design (works on desktop & mobile)  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **React + Vite** ⚡ (frontend framework)  
+- **Tailwind CSS** 🎨 (styling)  
+- **Open Library API** 🌐 (data source)  
+
+---
+
+## 📂 Project Structure  
+
+book-finder/
+│── src/
+│ ├── components/
+│ │ └── BookCard.jsx # Reusable book card component
+│ ├── App.jsx # Main app with search & suggestions
+│ ├── main.jsx # Entry point
+│── index.html
+│── package.json
+│── tailwind.config.js
+│── postcss.config.js
+│── vite.config.js
+│── README.md
+
+
+
+ 
+---
+
+## ⚙️ Installation & Setup  
+
+Clone the repo and run locally:  
+
+```bash
+# Clone repo
+git clone https://github.com/your-username/book-finder.git
+cd book-finder
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+
+https://openlibrary.org/search.json?title={bookTitle}
